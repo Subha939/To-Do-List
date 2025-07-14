@@ -1,0 +1,126 @@
+                *{
+                    padding: 0;
+                    margin: 0;
+                    font-family:sans-serif;
+                }
+
+                body{
+                    height: 100vh;
+                    width: 100vw;
+                    background-image: url("bk.jpg");
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-repeat: no-repeat;
+                    
+                }
+
+                .search{
+                    height: 30px;
+                    width: 300px;
+                    background-color: #f0f0f0;
+                    display: flex;
+                    
+                    justify-content: space-between;
+                    border-radius: 10px;
+                }
+
+                .search input{                  
+                    flex: 1;
+                    border:none;
+                    outline: none;
+                    background: transparent;
+                }
+
+                button{
+                    width: 5rem;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #FF5F1F;
+                }
+
+                .div{
+                    height: 500px;
+                    width: 700px;
+                    background-color: white;
+                    display:flex;
+                    justify-content: center;
+                     align-items: center;
+                     overflow:auto;
+                     
+
+                }
+
+                .container{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+            
+
+                    
+                }
+
+                .main{
+                    margin-top: 10px;
+                    padding-top: 10px;
+                    width: 300px;
+                    position: relative;
+                   
+
+                }
+                .list-box{
+                    margin-top: 2rem;
+                }
+
+                ul li{
+            
+                    list-style: none;
+                    font-size: 1rem;
+                    user-select: none;
+                    cursor: pointer;
+                    padding: 10px 8px 10px 40px;
+                    position: relative;
+                    inline-size: 300px;
+                    overflow-wrap: break-word ;
+
+                }
+
+                ul li::before{
+                    content: "";
+                    position: absolute;
+                    height: 30px;
+                    width: 30px;
+                    
+                    background-image: url("cheakbox.png");
+                    background-size: cover;
+                    background-position: center;
+                    left:-25px;
+                    bottom: 7px;
+            
+                }
+
+                ul li.cheaked{
+                    color: #555;
+                    text-decoration: line-through;
+
+                }
+
+                ul li.cheaked::before{
+                    background-image: url("cheaked.png");
+                    
+                }
+
+
+
+                ul li span {
+                    position: absolute;
+                    top:12px;
+                    right:0;
+                    font-size: 1rem;
+                }
+                ul li span:hover{
+                    background-color: #E8E8E8;
+                }
+
